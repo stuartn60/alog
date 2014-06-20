@@ -40,4 +40,6 @@ gem 'spring',        group: :development
 
 gem 'foundation-rails'
 gem 'devise'
-
+gem 'rich', :git => 'https://github.com/bastiaanterhorst/rich.git'
+gem 'paperclip'
+gem 'activeadmin', github: 'gregbell/active_admin'

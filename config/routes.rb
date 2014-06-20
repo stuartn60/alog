@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  mount Rich::Engine => '/rich', :as => 'rich'
   #get 'home/index'
   root to: "home#index"
 
